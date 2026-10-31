@@ -1,0 +1,6 @@
+
+State Machine - |txrx|controlador_rx:controlador2|estado
+Name estado.recebe estado.zera estado.ocioso 
+estado.ocioso 0 0 0 
+estado.zera 0 1 1 
+estado.recebe 1 0 1 
