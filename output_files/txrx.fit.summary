@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Oct 30 20:15:30 2026
+Fitter Status : Successful - Fri Oct 30 20:53:26 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : txrx
 Top-level Entity Name : txrx
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 149 / 49,760 ( < 1 % )
-    Total combinational functions : 145 / 49,760 ( < 1 % )
+Total logic elements : 146 / 49,760 ( < 1 % )
+    Total combinational functions : 142 / 49,760 ( < 1 % )
     Dedicated logic registers : 49 / 49,760 ( < 1 % )
 Total registers : 49
 Total pins : 51 / 360 ( 14 % )

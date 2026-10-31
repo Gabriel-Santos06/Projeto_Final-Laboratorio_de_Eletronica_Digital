@@ -1,5 +1,5 @@
 Fitter report for txrx
-Fri Oct 30 20:15:30 2026
+Fri Oct 30 20:53:26 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -66,15 +66,15 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 30 20:15:30 2026           ;
+; Fitter Status                      ; Successful - Fri Oct 30 20:53:26 2026           ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; txrx                                            ;
 ; Top-level Entity Name              ; txrx                                            ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M50DAF484C7G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 149 / 49,760 ( < 1 % )                          ;
-;     Total combinational functions  ; 145 / 49,760 ( < 1 % )                          ;
+; Total logic elements               ; 146 / 49,760 ( < 1 % )                          ;
+;     Total combinational functions  ; 142 / 49,760 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 49 / 49,760 ( < 1 % )                           ;
 ; Total registers                    ; 49                                              ;
 ; Total pins                         ; 51 / 360 ( 14 % )                               ;
@@ -152,7 +152,7 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
+; Average used               ; 1.05        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -167,8 +167,8 @@ on the Quartus Prime software download page.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 316 ) ; 0.00 % ( 0 / 316 )         ; 0.00 % ( 0 / 316 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 316 ) ; 0.00 % ( 0 / 316 )         ; 0.00 % ( 0 / 316 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 313 ) ; 0.00 % ( 0 / 313 )         ; 0.00 % ( 0 / 313 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 313 ) ; 0.00 % ( 0 / 313 )         ; 0.00 % ( 0 / 313 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -191,7 +191,7 @@ on the Quartus Prime software download page.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 300 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 297 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -207,26 +207,26 @@ The pin-out file can be found in C:/Users/elton/Documentos/txrx/output_files/txr
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 149 / 49,760 ( < 1 % ) ;
-;     -- Combinational with no register       ; 100                    ;
+; Total logic elements                        ; 146 / 49,760 ( < 1 % ) ;
+;     -- Combinational with no register       ; 97                     ;
 ;     -- Register only                        ; 4                      ;
 ;     -- Combinational with a register        ; 45                     ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 91                     ;
-;     -- 3 input functions                    ; 19                     ;
-;     -- <=2 input functions                  ; 35                     ;
+;     -- 4 input functions                    ; 81                     ;
+;     -- 3 input functions                    ; 28                     ;
+;     -- <=2 input functions                  ; 33                     ;
 ;     -- Register only                        ; 4                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 121                    ;
+;     -- normal mode                          ; 118                    ;
 ;     -- arithmetic mode                      ; 24                     ;
 ;                                             ;                        ;
 ; Total registers*                            ; 49 / 51,509 ( < 1 % )  ;
 ;     -- Dedicated logic registers            ; 49 / 49,760 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 13 / 3,110 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 15 / 3,110 ( < 1 % )   ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 51 / 360 ( 14 % )      ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
@@ -247,11 +247,11 @@ The pin-out file can be found in C:/Users/elton/Documentos/txrx/output_files/txr
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%     ;
-; Peak interconnect usage (total/H/V)         ; 2.0% / 2.1% / 1.7%     ;
+; Peak interconnect usage (total/H/V)         ; 1.7% / 2.3% / 1.0%     ;
 ; Maximum fan-out                             ; 49                     ;
-; Highest non-global fan-out                  ; 27                     ;
-; Total fan-out                               ; 713                    ;
-; Average fan-out                             ; 2.23                   ;
+; Highest non-global fan-out                  ; 25                     ;
+; Total fan-out                               ; 696                    ;
+; Average fan-out                             ; 2.20                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -264,26 +264,26 @@ The pin-out file can be found in C:/Users/elton/Documentos/txrx/output_files/txr
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 149 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 100                   ; 0                              ;
+; Total logic elements                        ; 146 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 97                    ; 0                              ;
 ;     -- Register only                        ; 4                     ; 0                              ;
 ;     -- Combinational with a register        ; 45                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 91                    ; 0                              ;
-;     -- 3 input functions                    ; 19                    ; 0                              ;
-;     -- <=2 input functions                  ; 35                    ; 0                              ;
+;     -- 4 input functions                    ; 81                    ; 0                              ;
+;     -- 3 input functions                    ; 28                    ; 0                              ;
+;     -- <=2 input functions                  ; 33                    ; 0                              ;
 ;     -- Register only                        ; 4                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 121                   ; 0                              ;
+;     -- normal mode                          ; 118                   ; 0                              ;
 ;     -- arithmetic mode                      ; 24                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 49                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 49 / 49760 ( < 1 % )  ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 13 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 15 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 51                    ; 0                              ;
@@ -301,8 +301,8 @@ The pin-out file can be found in C:/Users/elton/Documentos/txrx/output_files/txr
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 719                   ; 8                              ;
-;     -- Registered Connections               ; 155                   ; 0                              ;
+;     -- Total Connections                    ; 702                   ; 8                              ;
+;     -- Registered Connections               ; 164                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -336,16 +336,16 @@ The pin-out file can be found in C:/Users/elton/Documentos/txrx/output_files/txr
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; clock_50       ; P11   ; 3        ; 34           ; 0            ; 28           ; 49                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; enable_divisor ; A14   ; 7        ; 58           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; erro_pos[0]    ; A12   ; 7        ; 54           ; 54           ; 21           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; erro_pos[1]    ; B12   ; 7        ; 49           ; 54           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; erro_pos[2]    ; A13   ; 7        ; 54           ; 54           ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; erro_pos[0]    ; A12   ; 7        ; 54           ; 54           ; 21           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; erro_pos[1]    ; B12   ; 7        ; 49           ; 54           ; 0            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; erro_pos[2]    ; A13   ; 7        ; 54           ; 54           ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; mensagem[0]    ; C10   ; 7        ; 51           ; 54           ; 28           ; 13                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; mensagem[1]    ; C11   ; 7        ; 51           ; 54           ; 21           ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; mensagem[2]    ; D12   ; 7        ; 51           ; 54           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; mensagem[3]    ; C12   ; 7        ; 54           ; 54           ; 28           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; start          ; B8    ; 7        ; 46           ; 54           ; 28           ; 27                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; visor[0]       ; B14   ; 7        ; 56           ; 54           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; visor[1]       ; F15   ; 7        ; 69           ; 54           ; 0            ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; start          ; B8    ; 7        ; 46           ; 54           ; 28           ; 25                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; visor[0]       ; B14   ; 7        ; 56           ; 54           ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; visor[1]       ; F15   ; 7        ; 69           ; 54           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -966,12 +966,12 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; hex3[4]        ; Incomplete set of assignments ;
 ; hex3[5]        ; Incomplete set of assignments ;
 ; hex3[6]        ; Incomplete set of assignments ;
-; visor[1]       ; Incomplete set of assignments ;
-; erro_pos[0]    ; Incomplete set of assignments ;
-; erro_pos[1]    ; Incomplete set of assignments ;
-; erro_pos[2]    ; Incomplete set of assignments ;
 ; mensagem[0]    ; Incomplete set of assignments ;
+; visor[1]       ; Incomplete set of assignments ;
 ; visor[0]       ; Incomplete set of assignments ;
+; erro_pos[0]    ; Incomplete set of assignments ;
+; erro_pos[2]    ; Incomplete set of assignments ;
+; erro_pos[1]    ; Incomplete set of assignments ;
 ; mensagem[1]    ; Incomplete set of assignments ;
 ; mensagem[2]    ; Incomplete set of assignments ;
 ; mensagem[3]    ; Incomplete set of assignments ;
@@ -986,14 +986,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node       ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                        ; Entity Name             ; Library Name ;
 +----------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------+-------------------------+--------------+
-; |txrx                            ; 149 (64)    ; 49 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 51   ; 0            ; 100 (64)     ; 4 (0)             ; 45 (0)           ; 0          ; |txrx                                      ; txrx                    ; work         ;
+; |txrx                            ; 146 (64)    ; 49 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 51   ; 0            ; 97 (64)      ; 4 (0)             ; 45 (0)           ; 0          ; |txrx                                      ; txrx                    ; work         ;
 ;    |controlador_rx:rx|           ; 5 (5)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0          ; |txrx|controlador_rx:rx                    ; controlador_rx          ; work         ;
 ;    |corretor_de_erro:cor|        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0          ; |txrx|corretor_de_erro:cor                 ; corretor_de_erro        ; work         ;
 ;    |desserializador:des|         ; 13 (13)     ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 7 (7)            ; 0          ; |txrx|desserializador:des                  ; desserializador         ; work         ;
 ;    |divisor_de_clock:div|        ; 37 (37)     ; 25 (25)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 4 (4)             ; 21 (21)          ; 0          ; |txrx|divisor_de_clock:div                 ; divisor_de_clock        ; work         ;
-;    |gerador_de_paridade:ger|     ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0          ; |txrx|gerador_de_paridade:ger              ; gerador_de_paridade     ; work         ;
-;    |injetor_de_erro:inj|         ; 10 (1)      ; 7 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (1)        ; 0 (0)             ; 7 (0)            ; 0          ; |txrx|injetor_de_erro:inj                  ; injetor_de_erro         ; work         ;
-;       |serializador:ser|         ; 9 (9)       ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 7 (7)            ; 0          ; |txrx|injetor_de_erro:inj|serializador:ser ; serializador            ; work         ;
+;    |gerador_de_paridade:ger|     ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 1 (1)            ; 0          ; |txrx|gerador_de_paridade:ger              ; gerador_de_paridade     ; work         ;
+;    |injetor_de_erro:inj|         ; 8 (1)       ; 7 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 7 (0)            ; 0          ; |txrx|injetor_de_erro:inj                  ; injetor_de_erro         ; work         ;
+;       |serializador:ser|         ; 7 (7)       ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 7 (7)            ; 0          ; |txrx|injetor_de_erro:inj|serializador:ser ; serializador            ; work         ;
 ;    |serializador:ser|            ; 8 (8)       ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 7 (7)            ; 0          ; |txrx|serializador:ser                     ; serializador            ; work         ;
 ;    |verificador_de_paridade:ver| ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0          ; |txrx|verificador_de_paridade:ver          ; verificador_de_paridade ; work         ;
 +----------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------+-------------------------+--------------+
@@ -1044,16 +1044,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; hex3[4]        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; hex3[5]        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; hex3[6]        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; visor[1]       ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; erro_pos[0]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; erro_pos[1]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; erro_pos[2]    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; mensagem[0]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; visor[1]       ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; visor[0]       ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; mensagem[1]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; erro_pos[0]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; erro_pos[2]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; erro_pos[1]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; mensagem[1]    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; mensagem[2]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; mensagem[3]    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; start          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; start          ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; clock_50       ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; enable_divisor ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 +----------------+----------+---------------+---------------+-----------------------+-----+------+
@@ -1064,59 +1064,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                               ; Pad To Core Index ; Setting ;
 +---------------------------------------------------+-------------------+---------+
-; visor[1]                                          ;                   ;         ;
-;      - Mux6~0                                     ; 1                 ; 6       ;
-;      - Mux6~1                                     ; 1                 ; 6       ;
-;      - Mux6~2                                     ; 1                 ; 6       ;
-;      - Mux5~0                                     ; 1                 ; 6       ;
-;      - Mux5~1                                     ; 1                 ; 6       ;
-;      - Mux5~2                                     ; 1                 ; 6       ;
-;      - Mux4~0                                     ; 1                 ; 6       ;
-;      - Mux4~1                                     ; 1                 ; 6       ;
-;      - Mux4~2                                     ; 1                 ; 6       ;
-;      - Mux3~1                                     ; 1                 ; 6       ;
-;      - Mux3~2                                     ; 1                 ; 6       ;
-;      - Mux2~0                                     ; 1                 ; 6       ;
-;      - Mux2~1                                     ; 1                 ; 6       ;
-;      - Mux1~4                                     ; 1                 ; 6       ;
-;      - Mux0~0                                     ; 1                 ; 6       ;
-;      - Mux0~1                                     ; 1                 ; 6       ;
-; erro_pos[0]                                       ;                   ;         ;
-;      - Mux6~0                                     ; 0                 ; 6       ;
-;      - Mux5~0                                     ; 0                 ; 6       ;
-;      - Mux4~0                                     ; 0                 ; 6       ;
-;      - Mux3~0                                     ; 0                 ; 6       ;
-;      - Mux2~2                                     ; 0                 ; 6       ;
-;      - Mux5~3                                     ; 0                 ; 6       ;
-;      - Mux0~2                                     ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~0 ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~3 ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~8 ; 0                 ; 6       ;
-;      - Mux1~5                                     ; 0                 ; 6       ;
-; erro_pos[1]                                       ;                   ;         ;
-;      - Mux6~0                                     ; 0                 ; 6       ;
-;      - Mux5~0                                     ; 0                 ; 6       ;
-;      - Mux4~0                                     ; 0                 ; 6       ;
-;      - Mux3~0                                     ; 0                 ; 6       ;
-;      - Mux2~2                                     ; 0                 ; 6       ;
-;      - Mux5~3                                     ; 0                 ; 6       ;
-;      - Mux0~2                                     ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~0 ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~3 ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~8 ; 0                 ; 6       ;
-;      - Mux1~5                                     ; 0                 ; 6       ;
-; erro_pos[2]                                       ;                   ;         ;
-;      - Mux6~0                                     ; 1                 ; 6       ;
-;      - Mux5~0                                     ; 1                 ; 6       ;
-;      - Mux4~0                                     ; 1                 ; 6       ;
-;      - Mux3~0                                     ; 1                 ; 6       ;
-;      - Mux2~1                                     ; 1                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~1 ; 1                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~2 ; 1                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~3 ; 1                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~6 ; 1                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~7 ; 1                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~8 ; 1                 ; 6       ;
 ; mensagem[0]                                       ;                   ;         ;
 ;      - Mux6~1                                     ; 0                 ; 6       ;
 ;      - gerador_de_paridade:ger|codigo[4]~0        ; 0                 ; 6       ;
@@ -1131,32 +1078,69 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Mux7~0                                     ; 0                 ; 6       ;
 ;      - serializador:ser|reg~0                     ; 0                 ; 6       ;
 ;      - serializador:ser|reg~7                     ; 0                 ; 6       ;
-; visor[0]                                          ;                   ;         ;
+; visor[1]                                          ;                   ;         ;
+;      - Mux6~0                                     ; 0                 ; 6       ;
 ;      - Mux6~1                                     ; 0                 ; 6       ;
-;      - Mux6~2                                     ; 0                 ; 6       ;
-;      - Mux5~1                                     ; 0                 ; 6       ;
-;      - Mux5~2                                     ; 0                 ; 6       ;
+;      - Mux5~0                                     ; 0                 ; 6       ;
+;      - Mux4~0                                     ; 0                 ; 6       ;
 ;      - Mux4~1                                     ; 0                 ; 6       ;
-;      - Mux4~2                                     ; 0                 ; 6       ;
-;      - Mux3~1                                     ; 0                 ; 6       ;
-;      - Mux3~2                                     ; 0                 ; 6       ;
+;      - Mux3~0                                     ; 0                 ; 6       ;
 ;      - Mux2~0                                     ; 0                 ; 6       ;
-;      - Mux1~4                                     ; 0                 ; 6       ;
+;      - Mux2~1                                     ; 0                 ; 6       ;
+;      - Mux1~0                                     ; 0                 ; 6       ;
 ;      - Mux0~0                                     ; 0                 ; 6       ;
 ;      - Mux0~1                                     ; 0                 ; 6       ;
-; mensagem[1]                                       ;                   ;         ;
+; visor[0]                                          ;                   ;         ;
+;      - Mux6~0                                     ; 0                 ; 6       ;
+;      - Mux5~0                                     ; 0                 ; 6       ;
 ;      - Mux5~1                                     ; 0                 ; 6       ;
-;      - gerador_de_paridade:ger|codigo[5]          ; 0                 ; 6       ;
-;      - gerador_de_paridade:ger|codigo[6]          ; 0                 ; 6       ;
-;      - Mux13~0                                    ; 0                 ; 6       ;
-;      - Mux12~0                                    ; 0                 ; 6       ;
-;      - Mux11~0                                    ; 0                 ; 6       ;
-;      - Mux10~0                                    ; 0                 ; 6       ;
-;      - Mux9~0                                     ; 0                 ; 6       ;
-;      - Mux8~0                                     ; 0                 ; 6       ;
-;      - Mux7~0                                     ; 0                 ; 6       ;
-;      - serializador:ser|reg~2                     ; 0                 ; 6       ;
-;      - serializador:ser|reg~7                     ; 0                 ; 6       ;
+;      - Mux4~0                                     ; 0                 ; 6       ;
+;      - Mux3~0                                     ; 0                 ; 6       ;
+;      - Mux3~1                                     ; 0                 ; 6       ;
+;      - Mux2~0                                     ; 0                 ; 6       ;
+;      - Mux1~0                                     ; 0                 ; 6       ;
+;      - Mux1~1                                     ; 0                 ; 6       ;
+;      - Mux0~0                                     ; 0                 ; 6       ;
+; erro_pos[0]                                       ;                   ;         ;
+;      - ShiftLeft0~0                               ; 0                 ; 6       ;
+;      - ShiftLeft0~1                               ; 0                 ; 6       ;
+;      - ShiftLeft0~2                               ; 0                 ; 6       ;
+;      - ShiftLeft0~3                               ; 0                 ; 6       ;
+;      - ShiftLeft0~4                               ; 0                 ; 6       ;
+;      - ShiftLeft0~5                               ; 0                 ; 6       ;
+;      - ShiftLeft0~6                               ; 0                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~6 ; 0                 ; 6       ;
+; erro_pos[2]                                       ;                   ;         ;
+;      - ShiftLeft0~0                               ; 0                 ; 6       ;
+;      - ShiftLeft0~1                               ; 0                 ; 6       ;
+;      - ShiftLeft0~2                               ; 0                 ; 6       ;
+;      - ShiftLeft0~3                               ; 0                 ; 6       ;
+;      - ShiftLeft0~4                               ; 0                 ; 6       ;
+;      - ShiftLeft0~5                               ; 0                 ; 6       ;
+;      - ShiftLeft0~6                               ; 0                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~6 ; 0                 ; 6       ;
+; erro_pos[1]                                       ;                   ;         ;
+;      - ShiftLeft0~0                               ; 0                 ; 6       ;
+;      - ShiftLeft0~1                               ; 0                 ; 6       ;
+;      - ShiftLeft0~2                               ; 0                 ; 6       ;
+;      - ShiftLeft0~3                               ; 0                 ; 6       ;
+;      - ShiftLeft0~4                               ; 0                 ; 6       ;
+;      - ShiftLeft0~5                               ; 0                 ; 6       ;
+;      - ShiftLeft0~6                               ; 0                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~6 ; 0                 ; 6       ;
+; mensagem[1]                                       ;                   ;         ;
+;      - Mux5~0                                     ; 1                 ; 6       ;
+;      - gerador_de_paridade:ger|codigo[5]          ; 1                 ; 6       ;
+;      - gerador_de_paridade:ger|codigo[6]          ; 1                 ; 6       ;
+;      - Mux13~0                                    ; 1                 ; 6       ;
+;      - Mux12~0                                    ; 1                 ; 6       ;
+;      - Mux11~0                                    ; 1                 ; 6       ;
+;      - Mux10~0                                    ; 1                 ; 6       ;
+;      - Mux9~0                                     ; 1                 ; 6       ;
+;      - Mux8~0                                     ; 1                 ; 6       ;
+;      - Mux7~0                                     ; 1                 ; 6       ;
+;      - serializador:ser|reg~2                     ; 1                 ; 6       ;
+;      - serializador:ser|reg~7                     ; 1                 ; 6       ;
 ; mensagem[2]                                       ;                   ;         ;
 ;      - Mux4~1                                     ; 0                 ; 6       ;
 ;      - gerador_de_paridade:ger|codigo[4]~0        ; 0                 ; 6       ;
@@ -1171,7 +1155,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - serializador:ser|reg~3                     ; 0                 ; 6       ;
 ;      - serializador:ser|reg~7                     ; 0                 ; 6       ;
 ; mensagem[3]                                       ;                   ;         ;
-;      - Mux3~1                                     ; 1                 ; 6       ;
+;      - Mux3~0                                     ; 1                 ; 6       ;
 ;      - gerador_de_paridade:ger|codigo[4]~0        ; 1                 ; 6       ;
 ;      - gerador_de_paridade:ger|codigo[5]          ; 1                 ; 6       ;
 ;      - Mux13~0                                    ; 1                 ; 6       ;
@@ -1183,36 +1167,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Mux7~0                                     ; 1                 ; 6       ;
 ;      - serializador:ser|reg~4                     ; 1                 ; 6       ;
 ; start                                             ;                   ;         ;
-;      - serializador:ser|reg~0                     ; 0                 ; 6       ;
-;      - serializador:ser|reg[5]~1                  ; 0                 ; 6       ;
-;      - desserializador:des|reg~0                  ; 0                 ; 6       ;
-;      - controlador_rx:rx|n[2]~0                   ; 0                 ; 6       ;
-;      - controlador_rx:rx|n[0]~1                   ; 0                 ; 6       ;
-;      - controlador_rx:rx|n[1]~2                   ; 0                 ; 6       ;
-;      - desserializador:des|reg~1                  ; 0                 ; 6       ;
-;      - desserializador:des|reg~2                  ; 0                 ; 6       ;
-;      - desserializador:des|reg~3                  ; 0                 ; 6       ;
-;      - desserializador:des|reg~4                  ; 0                 ; 6       ;
-;      - desserializador:des|reg~5                  ; 0                 ; 6       ;
-;      - desserializador:des|reg~6                  ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~0 ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~1 ; 0                 ; 6       ;
-;      - serializador:ser|reg~2                     ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~2 ; 0                 ; 6       ;
-;      - serializador:ser|reg~3                     ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~3 ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~4 ; 0                 ; 6       ;
-;      - serializador:ser|reg~4                     ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~5 ; 0                 ; 6       ;
-;      - serializador:ser|reg~5                     ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~6 ; 0                 ; 6       ;
-;      - serializador:ser|reg~6                     ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~7 ; 0                 ; 6       ;
-;      - serializador:ser|reg~7                     ; 0                 ; 6       ;
-;      - injetor_de_erro:inj|serializador:ser|reg~8 ; 0                 ; 6       ;
+;      - serializador:ser|reg~0                     ; 1                 ; 6       ;
+;      - serializador:ser|reg[0]~1                  ; 1                 ; 6       ;
+;      - desserializador:des|reg~0                  ; 1                 ; 6       ;
+;      - controlador_rx:rx|n[2]~0                   ; 1                 ; 6       ;
+;      - controlador_rx:rx|n[0]~1                   ; 1                 ; 6       ;
+;      - controlador_rx:rx|n[1]~2                   ; 1                 ; 6       ;
+;      - desserializador:des|reg~1                  ; 1                 ; 6       ;
+;      - desserializador:des|reg~2                  ; 1                 ; 6       ;
+;      - desserializador:des|reg~3                  ; 1                 ; 6       ;
+;      - desserializador:des|reg~4                  ; 1                 ; 6       ;
+;      - desserializador:des|reg~5                  ; 1                 ; 6       ;
+;      - desserializador:des|reg~6                  ; 1                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~0 ; 1                 ; 6       ;
+;      - serializador:ser|reg~2                     ; 1                 ; 6       ;
+;      - serializador:ser|reg~3                     ; 1                 ; 6       ;
+;      - serializador:ser|reg~4                     ; 1                 ; 6       ;
+;      - serializador:ser|reg~5                     ; 1                 ; 6       ;
+;      - serializador:ser|reg~6                     ; 1                 ; 6       ;
+;      - serializador:ser|reg~7                     ; 1                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~1 ; 1                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~2 ; 1                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~3 ; 1                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~4 ; 1                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~5 ; 1                 ; 6       ;
+;      - injetor_de_erro:inj|serializador:ser|reg~6 ; 1                 ; 6       ;
 ; clock_50                                          ;                   ;         ;
 ; enable_divisor                                    ;                   ;         ;
-;      - serializador:ser|reg[5]~1                  ; 0                 ; 6       ;
+;      - serializador:ser|reg[0]~1                  ; 0                 ; 6       ;
 +---------------------------------------------------+-------------------+---------+
 
 
@@ -1222,7 +1204,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                      ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; clock_50                  ; PIN_P11            ; 49      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; serializador:ser|reg[5]~1 ; LCCOMB_X62_Y47_N18 ; 24      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; serializador:ser|reg[0]~1 ; LCCOMB_X56_Y52_N10 ; 24      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +---------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1231,7 +1213,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name     ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clock_50 ; PIN_P11  ; 49      ; 7                                    ; Global Clock         ; GCLK19           ; --                        ;
+; clock_50 ; PIN_P11  ; 49      ; 3                                    ; Global Clock         ; GCLK19           ; --                        ;
 +----------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1240,59 +1222,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 174 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 16 / 5,382 ( < 1 % )    ;
-; C4 interconnects      ; 84 / 106,704 ( < 1 % )  ;
-; Direct links          ; 40 / 148,641 ( < 1 % )  ;
+; Block interconnects   ; 182 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 11 / 5,382 ( < 1 % )    ;
+; C4 interconnects      ; 81 / 106,704 ( < 1 % )  ;
+; Direct links          ; 35 / 148,641 ( < 1 % )  ;
 ; Global clocks         ; 1 / 20 ( 5 % )          ;
-; Local interconnects   ; 58 / 49,760 ( < 1 % )   ;
+; Local interconnects   ; 70 / 49,760 ( < 1 % )   ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
 ; R24 interconnects     ; 17 / 5,406 ( < 1 % )    ;
-; R4 interconnects      ; 118 / 147,764 ( < 1 % ) ;
+; R4 interconnects      ; 135 / 147,764 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
-+----------------------------------------------------------------------------+
-; LAB Logic Elements                                                         ;
-+---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 11.46) ; Number of LABs  (Total = 13) ;
-+---------------------------------------------+------------------------------+
-; 1                                           ; 2                            ;
-; 2                                           ; 0                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 1                            ;
-; 9                                           ; 0                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 1                            ;
-; 12                                          ; 1                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 0                            ;
-; 15                                          ; 1                            ;
-; 16                                          ; 6                            ;
-+---------------------------------------------+------------------------------+
++---------------------------------------------------------------------------+
+; LAB Logic Elements                                                        ;
++--------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 9.73) ; Number of LABs  (Total = 15) ;
++--------------------------------------------+------------------------------+
+; 1                                          ; 4                            ;
+; 2                                          ; 0                            ;
+; 3                                          ; 0                            ;
+; 4                                          ; 0                            ;
+; 5                                          ; 1                            ;
+; 6                                          ; 0                            ;
+; 7                                          ; 0                            ;
+; 8                                          ; 1                            ;
+; 9                                          ; 1                            ;
+; 10                                         ; 0                            ;
+; 11                                         ; 0                            ;
+; 12                                         ; 1                            ;
+; 13                                         ; 1                            ;
+; 14                                         ; 0                            ;
+; 15                                         ; 1                            ;
+; 16                                         ; 5                            ;
++--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.54) ; Number of LABs  (Total = 13) ;
+; LAB-wide Signals  (Average = 0.53) ; Number of LABs  (Total = 15) ;
 +------------------------------------+------------------------------+
 ; 1 Clock                            ; 6                            ;
-; 1 Clock enable                     ; 1                            ;
+; 1 Clock enable                     ; 2                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 15.23) ; Number of LABs  (Total = 13) ;
+; Number of Signals Sourced  (Average = 13.00) ; Number of LABs  (Total = 15) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 2                            ;
+; 1                                            ; 4                            ;
 ; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
@@ -1300,26 +1282,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
 ; 8                                            ; 1                            ;
-; 9                                            ; 1                            ;
+; 9                                            ; 2                            ;
 ; 10                                           ; 0                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 2                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 1                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
-; 19                                           ; 1                            ;
+; 19                                           ; 0                            ;
 ; 20                                           ; 0                            ;
 ; 21                                           ; 0                            ;
 ; 22                                           ; 0                            ;
 ; 23                                           ; 1                            ;
 ; 24                                           ; 0                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 1                            ;
-; 28                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 1                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 1                            ;
 ; 29                                           ; 0                            ;
 ; 30                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
@@ -1328,51 +1310,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 8.23) ; Number of LABs  (Total = 13) ;
+; Number of Signals Sourced Out  (Average = 6.93) ; Number of LABs  (Total = 15) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 2                            ;
-; 2                                               ; 1                            ;
-; 3                                               ; 0                            ;
+; 1                                               ; 4                            ;
+; 2                                               ; 0                            ;
+; 3                                               ; 1                            ;
 ; 4                                               ; 0                            ;
-; 5                                               ; 1                            ;
+; 5                                               ; 2                            ;
 ; 6                                               ; 0                            ;
 ; 7                                               ; 1                            ;
-; 8                                               ; 2                            ;
-; 9                                               ; 0                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 1                            ;
 ; 10                                              ; 1                            ;
-; 11                                              ; 1                            ;
-; 12                                              ; 1                            ;
-; 13                                              ; 0                            ;
-; 14                                              ; 3                            ;
+; 11                                              ; 0                            ;
+; 12                                              ; 2                            ;
+; 13                                              ; 1                            ;
+; 14                                              ; 0                            ;
+; 15                                              ; 0                            ;
+; 16                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 9.08) ; Number of LABs  (Total = 13) ;
+; Number of Distinct Inputs  (Average = 9.07) ; Number of LABs  (Total = 15) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
 ; 2                                           ; 1                            ;
 ; 3                                           ; 0                            ;
-; 4                                           ; 2                            ;
-; 5                                           ; 2                            ;
+; 4                                           ; 3                            ;
+; 5                                           ; 1                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 1                            ;
+; 7                                           ; 2                            ;
 ; 8                                           ; 0                            ;
 ; 9                                           ; 0                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 1                            ;
 ; 12                                          ; 0                            ;
-; 13                                          ; 2                            ;
-; 14                                          ; 2                            ;
-; 15                                          ; 0                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 1                            ;
+; 15                                          ; 1                            ;
 ; 16                                          ; 0                            ;
 ; 17                                          ; 0                            ;
-; 18                                          ; 1                            ;
-; 19                                          ; 1                            ;
+; 18                                          ; 0                            ;
+; 19                                          ; 0                            ;
+; 20                                          ; 2                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -1476,12 +1461,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; hex3[4]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; hex3[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; hex3[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; visor[1]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; erro_pos[0]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; erro_pos[1]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; erro_pos[2]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; mensagem[0]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; visor[1]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; visor[0]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; erro_pos[0]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; erro_pos[2]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; erro_pos[1]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; mensagem[1]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; mensagem[2]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; mensagem[3]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1571,7 +1556,7 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clock_50~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: C:/Users/elton/Documentos/txrx/txrx.vhd Line: 17
+Info (176353): Automatically promoted node clock_50~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: C:/Users/elton/Documentos/txrx/txrx.vhd Line: 19
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1589,18 +1574,18 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.35 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.28 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/elton/Documentos/txrx/output_files/txrx.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5973 megabytes
-    Info: Processing ended: Fri Oct 30 20:15:31 2026
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 5974 megabytes
+    Info: Processing ended: Fri Oct 30 20:53:26 2026
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +----------------------------+

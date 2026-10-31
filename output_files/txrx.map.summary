@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Oct 30 20:15:20 2026
+Analysis & Synthesis Status : Successful - Fri Oct 30 20:53:16 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : txrx
 Top-level Entity Name : txrx
 Family : MAX 10
-Total logic elements : 144
-    Total combinational functions : 144
+Total logic elements : 141
+    Total combinational functions : 141
     Dedicated logic registers : 49
 Total registers : 49
 Total pins : 51

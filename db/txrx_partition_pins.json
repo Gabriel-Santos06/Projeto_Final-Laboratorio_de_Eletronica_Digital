@@ -160,7 +160,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "mensagem[0]",
+					"strict" : false
+				},
+				{
 					"name" : "visor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "visor[0]",
 					"strict" : false
 				},
 				{
@@ -168,19 +176,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "erro_pos[1]",
-					"strict" : false
-				},
-				{
 					"name" : "erro_pos[2]",
 					"strict" : false
 				},
 				{
-					"name" : "mensagem[0]",
-					"strict" : false
-				},
-				{
-					"name" : "visor[0]",
+					"name" : "erro_pos[1]",
 					"strict" : false
 				},
 				{

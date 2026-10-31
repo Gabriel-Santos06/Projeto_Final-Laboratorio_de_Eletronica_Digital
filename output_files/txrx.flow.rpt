@@ -1,5 +1,5 @@
 Flow report for txrx
-Fri Oct 30 20:15:39 2026
+Fri Oct 30 20:53:35 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -41,15 +41,15 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Oct 30 20:15:39 2026           ;
+; Flow Status                        ; Successful - Fri Oct 30 20:53:35 2026           ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; txrx                                            ;
 ; Top-level Entity Name              ; txrx                                            ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M50DAF484C7G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 149 / 49,760 ( < 1 % )                          ;
-;     Total combinational functions  ; 145 / 49,760 ( < 1 % )                          ;
+; Total logic elements               ; 146 / 49,760 ( < 1 % )                          ;
+;     Total combinational functions  ; 142 / 49,760 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 49 / 49,760 ( < 1 % )                           ;
 ; Total registers                    ; 49                                              ;
 ; Total pins                         ; 51 / 360 ( 14 % )                               ;
@@ -67,7 +67,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/30/2026 20:15:12 ;
+; Start date & time ; 10/30/2026 20:53:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; txrx                ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 253322008346963.179340571207392        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 253322008346963.179340798815980        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; Questa Altera FPGA (VHDL)              ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
@@ -97,12 +97,12 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4907 MB             ; 00:00:17                           ;
-; Fitter               ; 00:00:09     ; 1.1                     ; 5973 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4829 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4943 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4907 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:09     ; 1.1                     ; 5974 MB             ; 00:00:12                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4829 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4915 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4692 MB             ; 00:00:01                           ;
-; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:36                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
