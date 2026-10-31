@@ -1,0 +1,51 @@
+# --- Quartus Prime: arquivos gerados na compilação ---
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+qdb/
+tmp-clearbox/
+.qsys_edit/
+
+# Espaço de trabalho do usuário (layout das janelas)
+*.qws
+
+# Relatórios e arquivos temporários do Quartus
+*.rpt
+*.smsg
+*.summary
+*.jdi
+*.jditmp
+*.qar.bak
+*.bak
+*.tmp
+c5_pin_model_dump.txt
+*_assignment_defaults.qdf
+
+# Programação (gerados; recompile para obter)
+*.sof
+*.pof
+*.sld
+*.cdf
+*.done
+
+# --- Simulação (GHDL / Questa / ModelSim) ---
+work/
+*.cf
+*.o
+*.ghw
+*.vcd
+*.wlf
+*.vstf
+transcript
+modelsim.ini
+vsim.wlf
+
+# --- Sistema operacional / editores ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
