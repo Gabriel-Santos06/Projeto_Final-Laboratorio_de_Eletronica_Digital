@@ -5,7 +5,9 @@ use ieee.numeric_std.all;
 -- Topo (DE10-Lite) = o "main" do desenho: 9 blocos ligados como na imagem.
 --   SW0-3 mensagem | SW4-6 erro_pos (000 = sem erro, 001..111 = inverte o bit 0..6)
 --   SW7 enable_divisor (1 = clock lento) | SW8,SW9 visor das LEDR0-6:
---   00 palavra código, 01 palavra recebida, 1x posição do erro
+--   00 código sendo ENVIADO (vai deslocando para a direita, o bit 0 sai primeiro)
+--   01 código sendo RECEBIDO (os bits entram pela esquerda e vão enchendo)
+--   10 palavra código completa (estática)   11 posição do erro (máscara)
 --   KEY0 enviar (começa ao soltar) | LEDR7 erro | LEDR8 clock lento | LEDR9 bit saindo do TX
 --   ponto do HEX0 bit no RX | HEX3 enviada | HEX2 recebida | HEX1 síndrome | HEX0 corrigida
 entity txrx is
@@ -27,6 +29,7 @@ architecture arc_txrx of txrx is
 	signal enviar, tick, serie_tx, canal, esconder      : std_logic;
 	signal registrar, desl_tx, reset_rx, desl_rx        : std_logic;
 	signal cod, mascara, rec : std_logic_vector(6 downto 0);
+	signal vt, vr            : std_logic_vector(6 downto 0) := (others => '0');   -- só para o visor
 	signal sind              : std_logic_vector(2 downto 0);
 	signal sind4, msg_rec    : std_logic_vector(3 downto 0);
 	signal m8                : unsigned(7 downto 0);
@@ -65,10 +68,23 @@ begin
 	ver:  entity work.verificador_de_paridade port map (rec, sind, led_erro);
 	cor:  entity work.corretor_de_erro    port map (sind, rec, msg_rec);
 
+	-- cópias do serializador (vt) e do desserializador (vr), mesmos enables, só para ver o deslocamento
+	process (clock_50)
+	begin
+		if rising_edge(clock_50) then
+			if registrar = '1' then vt <= cod;
+			elsif desl_tx = '1' then vt <= '0' & vt(6 downto 1);
+			end if;
+			if reset_rx = '1' then vr <= (others => '0');
+			elsif desl_rx = '1' then vr <= canal & vr(6 downto 1);
+			end if;
+		end if;
+	end process;
+
 	led_serie   <= serie_tx;
 	ponto_canal <= not canal;
 	with visor select
-		codigo_out <= cod when "00", rec when "01", mascara when others;
+		codigo_out <= vt when "00", vr when "01", cod when "10", mascara when others;
 
 	hex3 <= seg7(mensagem,        '0');
 	hex2 <= seg7(rec(3 downto 0), esconder);
